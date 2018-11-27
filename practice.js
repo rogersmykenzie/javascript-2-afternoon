@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: "Mykenzie",
+  age: 20
+}
+//alert(me.name);
 
 
 ////////// PROBLEM 2 //////////
@@ -26,6 +30,14 @@
 */
 
 //Code here
+var favoriteThings = {
+   band: "Nine Inch Nails",
+   food: "Pasta",
+   person: "Anyone else",
+   book: "Series of Unfortunate Events",
+   movie: "Swiss Army Man",
+   holiday: "Christmas"
+}
 
 
 
@@ -34,7 +46,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "2005 Pontiac Aztek";
+favoriteThings.brand = "Goodfellow";
 
 
 /*
@@ -42,7 +55,8 @@
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,8 +70,10 @@
 */
 
 //Code here
-
-
+var backPack = {};
+var item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "red";
 
 /*
   After you do the above, alert your entire backPack object.
@@ -65,6 +81,7 @@
 
 //Code here
 
+//alert(backPack);
 
 
 /*
@@ -74,7 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,8 +114,8 @@ var user2 = {
 */
 
 //Code Here
-
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 
@@ -120,7 +137,9 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {
 
+}
 
 
 /*
@@ -129,7 +148,12 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function() {
+  alert("hello");
+}
+methodCollection.logHello = function() {
+  console.log("hello");  
+}
 
 
 /*
@@ -137,7 +161,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -148,7 +173,13 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name,bday,ssn) {
+  return {
+    name: name,
+    birthday: bday,
+    ssn: ssn
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -159,5 +190,11 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(cn,ed,sc) {
+  return {
+    cardNumber: cn,
+    expirationDate: ed,
+    securityCode: sc
+  }
+}
 
